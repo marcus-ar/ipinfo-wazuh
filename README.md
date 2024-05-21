@@ -17,8 +17,9 @@ Create your account in IPInfo (https://ipinfo.io/), copy your token and modifify
 
 2) Set the permissions 
 
-chmod 750 /var/ossec/integrations/custom-ipinfo.py
-chown root:wazuh /var/ossec/integrations/custom-ipinfo.py
+  chmod 750 /var/ossec/integrations/custom-ipinfo.py
+
+  chown root:wazuh /var/ossec/integrations/custom-ipinfo.py
 
 3) Create ossec.conf config
 
