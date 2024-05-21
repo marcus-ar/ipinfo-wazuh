@@ -7,7 +7,7 @@ But, with Filebeat GeoLocation it is not possible make this rules.
 
 The GeoIP data is added to the events in a higher level of the stack, that's why you can see it in the final events but it can't be used to trigger alerts.
 
-To resolve this problem, I create a integration with IPInfo API to consult GeoIP and create rules based in this.
+To resolve this problem, I created a integration with IPInfo API to consult GeoIP and create rules based in this.
 
 Create your account in IPInfo (https://ipinfo.io/), copy your token and modifify on script
 
