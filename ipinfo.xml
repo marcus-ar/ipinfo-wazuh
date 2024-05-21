@@ -7,7 +7,7 @@
     <options>no_full_log</options>
   </rule>
   
-  <rule id="100721" level="10">
+  <rule id="100721" level="15">
     <field name="ipinfo.country" type="pcre2" negate="yes">BR</field>
     <description>IPInfo: Connection on VPN from Country Different Brazil.</description>
     <group>fortigate, syslog, authentication_success,</group>
