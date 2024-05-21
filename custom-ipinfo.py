@@ -69,6 +69,7 @@ else:
     alert_output["ipinfo"]["timezone"] = ipinfo_api_response["timezone"]
     alert_output["ipinfo"]["source"]["description"] = alert["rule"]["description"]
     alert_output["ipinfo"]["source"]["alert"] = alert["id"]
+    alert_output["integration"] = "ipinfo"
     send_event(alert_output, alert["agent"])
 
 
