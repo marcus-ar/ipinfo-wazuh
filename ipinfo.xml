@@ -1,0 +1,22 @@
+<group name="ipinfo,">
+
+  <rule id="100720" level="10">
+    <field name="integration">ipinfo</field>
+    <match>ipinfo</match>
+    <description>IPInfo Events</description>
+    <options>no_full_log</options>
+  </rule>
+  
+  <rule id="100721" level="10">
+    <field name="ipinfo.country" type="pcre2" negate="yes">BR</field>
+    <description>IPInfo: Connection on VPN from Country Different Brazil.</description>
+    <group>fortigate, syslog, authentication_success,</group>
+  </rule>
+  
+  <rule id="100722" level="10">
+    <field name="ipinfo.country" type="pcre2">BR</field>
+    <description>IPInfo: Connection on VPN from Brazil.</description>
+    <group>fortigate, syslog, authentication_success,</group>
+  </rule>
+
+</group>
