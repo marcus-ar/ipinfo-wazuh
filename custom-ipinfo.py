@@ -34,7 +34,7 @@ alert_output = {}
 # IPInfo Server Base URL
 ipinfo_base_url = "https://ipinfo.io/"
 # IPInfo API AUTH KEY
-ipinfo_api_auth_key = "22d16935734b83"
+ipinfo_api_auth_key = "<YOUR_TOKEN>"
 event_source = alert["rule"]["id"][0]
 try:
     src_ip = alert["data"]["srcip"]
